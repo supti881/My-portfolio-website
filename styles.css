@@ -221,3 +221,96 @@ background:#7b61ff;
 animation:floatShape 5s infinite;
 }
 
+/* SKILLS SECTION */
+.skills-section {
+  padding: 80px 10%;
+  background: #111; /* match your navbar/hero theme */
+  color: #f8fafc;
+  text-align: center;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #00bcd4;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+/* SKILL CARD */
+.skill-card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+
+.skill-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #e0e7ff;
+}
+
+
+.skill-card p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #334155;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: #00bcd4;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
