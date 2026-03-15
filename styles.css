@@ -314,3 +314,377 @@ animation:floatShape 5s infinite;
   border-radius: 4px;
   transition: width 1s ease-in-out;
 }
+
+
+/* ABOUT SECTION */
+
+
+.about-section{
+padding:80px 10%;
+background:#0f172a;
+color:white;
+}
+
+
+.about-container{
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+
+.about-img img{
+width:300px;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+
+.about-text{
+max-width:600px;
+}
+
+
+.about-text h3{
+font-size:28px;
+margin-bottom:15px;
+color:#00bcd4;
+}
+
+
+.about-text p{
+margin-bottom:15px;
+color:#ccc;
+line-height:1.6;
+}
+
+
+
+
+
+
+/* SERVICES */
+
+
+.services-section{
+padding:80px 10%;
+background:#111;
+color:white;
+text-align:center;
+}
+
+
+.services-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+
+.service-card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+width:250px;
+transition:0.4s;
+cursor:pointer;
+}
+
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+
+.service-icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+
+.service-card h3{
+margin-bottom:10px;
+}
+
+
+.service-card p{
+color:#aaa;
+font-size:14px;
+}
+
+
+
+
+
+
+/* CONTACT */
+
+
+.contact-section{
+padding:80px 10%;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+
+.contact-container{
+display:flex;
+justify-content:center;
+margin-top:40px;
+}
+
+
+.contact-form{
+display:flex;
+flex-direction:column;
+width:400px;
+gap:15px;
+}
+
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+
+.contact-form textarea{
+resize:none;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+background:#000;
+color:#aaa;
+text-align:center;
+padding:20px;
+}
+
+
+.social-links{
+margin-top:10px;
+}
+
+
+.social-links a{
+color:#00bcd4;
+margin:0 10px;
+text-decoration:none;
+font-size:14px;
+}
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes float{
+
+
+0%{
+transform:translateY(0px);
+}
+
+
+50%{
+transform:translateY(-20px);
+}
+
+
+100%{
+transform:translateY(0px);
+}
+
+
+}
+
+
+
+
+@keyframes rotate{
+
+
+0%{
+transform:rotate(0deg);
+}
+
+
+100%{
+transform:rotate(360deg);
+}
+
+
+}
+
+
+@keyframes floatShape{
+
+
+0%{
+transform:translateY(0px);
+}
+
+
+50%{
+transform:translateY(-15px);
+}
+
+
+100%{
+transform:translateY(0px);
+}
+
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes slideLeft{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+@keyframes float{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-15px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+
+.hero-img img{
+width:250px;
+margin-top:30px;
+}
+
+
+.nav-links{
+position:absolute;
+top:70px;
+right:-100%;
+background:#111;
+flex-direction:column;
+width:200px;
+padding:20px;
+transition:0.4s;
+}
+
+
+.nav-links.active{
+right:0;
+}
+
+
+.menu-btn{
+display:block;
+}
+
+
+}
+@media(max-width:900px){
+
+
+.image-wrapper{
+width:300px;
+height:300px;
+}
+
+
+.profile-img{
+width:250px;
+height:250px;
+}
+
+
+.glow-circle{
+width:300px;
+height:300px;
+}
+  .skills-container {
+    gap: 15px;
+  }
+
+
+  .skill-card {
+    width: 160px;
+    padding: 20px 15px;
+  }
+
+
+  .skill-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
